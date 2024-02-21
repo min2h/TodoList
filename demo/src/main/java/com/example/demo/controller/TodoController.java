@@ -20,7 +20,14 @@ import com.example.demo.service.TodoService;
 @RestController
 @RequestMapping("todo")
 public class TodoController {
-
+	/*
+	 * 필요한 의존 객체의 “타입"에 해당하는 빈을 찾아 주입
+		생성자
+		setter
+		필드
+		위의 3가지의 경우에 Autowired를 사용
+		Autowired: 기본값이 true이기 때문에 의존성 주입을 할 대상을 찾지 못한다면 애플리케이션 구동에 실패
+	 */
 	@Autowired
 	private TodoService service;
 
