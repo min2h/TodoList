@@ -75,8 +75,6 @@ public class TodoService {
 		final Optional<TodoEntity> original = repository.findById(entity.getId());
 		
 		//3. 변환된 TodoEntity 존재하면 값을 새 entity  값으로 덮음.
-		original(todo -> {
-			
-		})
+		// todo
 	}
 }
