@@ -66,7 +66,9 @@ public class TodoService {
 		}
 	}
 	
-	
+	/**
+	 * 수정
+	 */
 	public List<TodoEntity> update(final TodoEntity entity){
 		//1. 검증
 		validate(entity);

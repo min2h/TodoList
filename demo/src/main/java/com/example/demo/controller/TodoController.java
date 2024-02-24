@@ -80,11 +80,14 @@ public class TodoController {
 		return ResponseEntity.ok().body(response);
 	}
 	
+	
+	//TODO: update 기능 수정 필요함.
 	@PutMapping
 	public ResponseEntity<?> updateTodo(@RequestBody TodoDTO dto){
 		String temporaryUserId = "temporary-user";
 		
 		TodoEntity entity = TodoDTO.toEntity(dto);
+		
 		entity.setUserId(temporaryUserId);
 		List<TodoEntity> entities = service.update(entity);
 		List<TodoDTO> dtos = entities.stream().map(TodoDTO::new).collect(Collectors.toList());
