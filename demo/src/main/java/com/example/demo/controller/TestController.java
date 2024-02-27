@@ -23,6 +23,10 @@ public class TestController {
 	public String testController() {
 		return "hello world!";
 	}
+	@GetMapping
+	public String testController2() {
+		return "hello world!2";
+	}
 
 	@GetMapping("/testGetMapping")
 	public String testControllerWithPath() {
