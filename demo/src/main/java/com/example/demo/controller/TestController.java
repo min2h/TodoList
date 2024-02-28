@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.dto.ResponseDTO;
 import com.example.demo.dto.TodoDTO;
 
+
+// 잔디심기...
 @RestController // 어노테이션 사용으로 Rest임을 명시 -> 스프링이 http 관련 코드 요청/응답 알아서 해준다.
 @RequestMapping("test") // 리소스
 public class TestController {
