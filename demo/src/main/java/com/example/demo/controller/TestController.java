@@ -34,7 +34,8 @@ public class TestController {
 	public String testControllerWithPath() {
 		return "GetMapping(/testGetMapping)";
 	}
-
+ // fggg
+	
 	@GetMapping("/{id}") // 값으로 받음 -> ex) /id=3
 	public String testPathVariable(@PathVariable(value = "id") int id) {
 		return "@PathVariable" + id;
